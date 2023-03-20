@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="head">
+    <div class="top">
+        <img src="./8537-removebg-preview.png" width="500px" alt="">
+    </div>
+    <div class="heading">
+        <h1 class="heading-1">JavaScript: </h1>
+        <h1 class="heading-2">Decision Making</h1>
+    </div>
+    <div class="bottom">
+        <img src="./85374-removebg-preview.png" width="800px" alt="">
+    </div>
+    </div>
+    <div class="main">
+    <div class="box">
+        <h3>Create a Function</h3>
+        <pre>
+            function Check(obj1){
+                obj1.setter = function(){
+                  console.log(this.name);
+                }
+             }
+        </pre>
+    </div>
+    <div class="box">
+        <h3>Delete a Parameter</h3>
+        <pre>
+            function Check(obj1) {
+                return delete obj1.rollno;
+           }
+        </pre>
+    </div>
+    <div class="box">
+        <h3>Check whether the Package is Dream Package or not</h3>
+        <pre>
+            function Check(obj1) {
+                if(obj1.salary>=500000) return "Dream";
+                return "NotDream"
+               }
+        </pre>
+    </div>
+    <div class="box">
+        <h3> Check whether the Object has a parameter or not</h3>
+        <pre>
+            function Check(obj1) {
+                if(Object.keys(obj1).length===0){
+                  return "false";
+                }
+                else{
+                  return "true";
+                }
+             }
+        </pre>
+    </div>
+    <div class="box">
+        <h3>Merge the Objects</h3>
+        <pre>
+            function Check(obj1,obj2) {
+                let obj3 = Object.assign({},obj1,obj2);
+                return (obj3);
+            }
+        </pre>
+    </div>
+    <div class="box">
+        <h3>
+            Object Multiplyer</h3>
+        <pre>
+            function Check(a,obj1) {
+                obj1.id*=a;
+                obj1.houseno*=a;
+                return(obj1);
+                }  
+        </pre>
+    </div>
+    <div class="box">
+        <h3>Find the sum of Object Members</h3>
+        <pre>
+            function Check(obj1) {
+                let sum = obj1.p1+obj1.p2+obj1.p3;
+                return sum;
+            }
+        </pre>
+    </div>
+    <div class="box">
+        <h3>Check whether the Objects are same or not.</h3>
+        <pre>
+            function check(obj1,a,b) {
+                if(obj1.name===a && obj1.id===b){
+                  return "true";
+                }  
+                else{
+                  return "false";
+                }
+              }
+             
+        </pre>
+    </div>
+    
+    </div>
+</body>
+</html>
